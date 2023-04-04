@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector-選擇器特性</title>
+</head>
+<body>
+
+    <style>
+        div{
+            color: red;
+         }
+         span{
+            color: blue !important;
+         }
+         span{
+            color: green;
+         }
+    </style>
+
+    <div>一號</div>
+    <span>二號</span>
+    <span>
+        <div>三號</div>
+        <div style="color: purple;">五號</div>
+    </span>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id_class-選擇器</title>
+    <style>
+        #fullname{
+            width: 100%;
+            height: 80px;
+            font-size: 50px;
+        }
+        .radio{
+            width: 100px;
+            height: 100px;
+        }
+        #button{
+            background: black;
+            color:wheat
+        }
+        .aaa{
+            background: yellow;
+            color: purple;            
+        }
+        #button2{
+            background: blue;
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="fullname">名字</label>
+    </div>
+    <div>
+        <input type="text" name="fullname" id="fullname">
+    </div>
+    <div>
+        <label for="grender">性別</label>
+    </div>
+    <div>
+        <input type="radio" class="radio" name="grender" id="grender-m">
+        <label for="grender-m">男</label>
+        <input type="radio" class="radio" name="grender" id="grender-f">
+        <label for="grender-f">女</label>
+    </div>
+
+    <div>
+        <button id="button">ID</button>
+        <button class="aaa">class</button>
+        <button class="aaa">class2</button>
+        <button id="button2" class="aaa">ID+class</button>
+    </div>
+</body>
+</html>

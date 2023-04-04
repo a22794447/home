@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esc-margin-消除外距</title>
+</head>
+<body>
+    <div>第一行</div>
+    <div>第二行</div>
+    <div>第三行</div>
+    <span>
+        <img src="../images/icon/apple-icon-precomposed.png" alt="圖片">
+    </span>
+
+    <style>
+        *,
+        *::after,
+        *::before{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        div{
+            background-color: aqua;
+        
+        }
+    </style>
+</body>
+</html>

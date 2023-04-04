@@ -1,0 +1,22 @@
+.cube{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(162, 162, 162);
+    /* background-image: url(../images/icon/apple-icon-precomposed.png); */
+    background-size: contain;
+    color: red;
+    text-align: center;
+    padding: 20px 50px;
+    line-height: 100px;
+}
+.as{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(164, 163, 163);
+    background-image: url(../images/icon/android-icon-36x36.png);
+    background-repeat: no-repeat;
+    color: red;
+    /* text-align: center; */
+    margin: 50px 90px;
+    line-height: 100px;
+}

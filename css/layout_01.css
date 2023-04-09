@@ -1,0 +1,52 @@
+.container{
+    width: 600px;
+    height: 100%;
+    margin: auto;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.top-menu{
+    background: rgb(31, 31, 31);
+    text-align: right;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+}
+
+.menu{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu-iten{
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-iten li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.as{
+    width: 600px;
+    height: 100%;
+    margin: auto;
+    background: black;
+}

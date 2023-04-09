@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display-顯示模式</title>
+    <style>
+        div{
+            background-color: black;
+            color: red;
+        }
+
+        .inline{
+            display: inline;
+        }
+
+        span{
+            background-color: blue;
+            color: orangered;
+            width: 100px;
+            height: 100px;
+        }
+
+        .auto{
+            width: 100px;
+            height: 70px;
+            background: yellow;
+            overflow: auto;
+        }
+        .hidden{
+            width: 100px;
+            height: 70px;
+            background: yellow;
+            overflow: hidden;
+        }
+        .scroll{
+            width: 100px;
+            height: 70px;
+            background: yellow;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div>display:block;</div>
+    <div class="inline">display:block;</div>
+    <div>display:block;</div>
+
+    <span>span</span>
+    <span style="display: inline-block;">inline-block</span>
+    <span>span</span>
+
+    <div style="display: none;">Hollo</div>
+
+    <div class="auto">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <div class="hidden">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <div class="scroll">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    
+</body>
+</html>

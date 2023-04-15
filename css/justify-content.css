@@ -1,0 +1,42 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    background: gray;
+    width: 700px;
+    height: 300px;
+    margin: auto;
+}
+
+.flex-item{
+    width: 100px;
+    height: 100px;
+    background: black;
+    color: white;
+    border: 2px solid red;
+}
+
+.flex-c{
+    justify-content: center;
+}
+
+.flex-e{
+    justify-content: flex-end;
+    /* flex-direction: row-reverse; */
+}
+
+.flex-sa{
+    justify-content: space-around;
+}
+
+.flex-sb{
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.flex-se{
+    justify-content: space-evenly;
+}

@@ -1,0 +1,27 @@
+.flex{
+    display: flex;
+    background: gray;
+    width: 700px;
+    height: 300px;
+    margin: auto;
+}
+
+.flex-item{
+    width: 100px;
+    height: 100px;
+    background: black;
+    color: white;
+    border: 2px solid red;
+}
+
+.large{
+    width: 500px;
+}
+
+.flex-w{
+    flex-wrap: wrap;
+}
+
+.flex-wr{
+    flex-wrap: wrap-reverse;
+}

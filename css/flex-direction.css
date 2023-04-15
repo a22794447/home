@@ -1,0 +1,27 @@
+.flex{
+    display: flex;
+    background: gray;
+    width: 700px;
+    height: 300px;
+    margin: auto;
+}
+
+.flex-item{
+    width: 100px;
+    height: 100px;
+    background: black;
+    color: white;
+    border: 2px solid red;
+}
+
+.dir-r{
+    flex-direction: row-reverse;
+}
+
+.dir-c{
+    flex-direction: column;
+}
+
+.dir-cr{
+    flex-direction: column-reverse;
+}

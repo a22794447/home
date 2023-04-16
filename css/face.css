@@ -104,5 +104,16 @@
     position: absolute;
     right: -10px;
     top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+}
+
+label{
+    cursor: pointer;
+}
+
+#swich:checked + .ad-banner{
+    display: none;
 }

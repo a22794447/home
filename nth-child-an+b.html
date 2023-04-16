@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child_子層倍數指定</title>
+    <style>
+        .table{
+            width: 90%;
+            margin: auto;
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .table th,
+        .table td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .table tbody tr{
+            background: gray;
+        }
+        .table tbody tr:nth-child(odd){
+            background: black;
+            color: white;
+        }
+        
+        .table tbody tr:nth-child(even){
+            background: green;
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>David</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>18</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

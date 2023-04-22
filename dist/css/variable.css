@@ -1,23 +1,23 @@
 .aa {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background: red;
 }
 
 .bb {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background: blue;
 }
 
 .cc {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background: green;
 }
 
 .dd {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background: purple;
 }/*# sourceMappingURL=variable.css.map */

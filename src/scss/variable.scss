@@ -1,0 +1,26 @@
+$w: 200px;
+$h: 200px;
+
+.aa{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.bb{
+    width: 100px;
+    height: 100px;
+    background: blue;
+}
+
+.cc{
+    width: $w;
+    height: $h;
+    background: green;
+}
+
+.dd{
+    width: $w;
+    height: $h;
+    background: purple;
+}

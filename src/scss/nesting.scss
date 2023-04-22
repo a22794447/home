@@ -1,0 +1,9 @@
+#header{
+    background: green;
+    &:hover{
+        background: yellow;
+    }
+    .title{
+        color: red;
+    }
+}

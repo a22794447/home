@@ -11,8 +11,9 @@ a {
   text-decoration: none;
 }
 
-body {
+body, html {
   background: black;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -74,7 +75,19 @@ body {
 
 .joinfor {
   height: 100vh;
-  background: purple;
+  background: rgb(45, 45, 45);
+  background-image: url(../images/banner.jpeg);
+  background-size: cover;
+  position: relative;
+}
+.joinfor::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.549);
 }
 .joinfor .join-warp {
   display: flex;
@@ -83,7 +96,8 @@ body {
   height: 100%;
 }
 .joinfor .join-warp .join-cont {
-  background: rgb(127, 232, 127);
+  background: rgb(0, 65, 0);
+  color: white;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -91,8 +105,149 @@ body {
 }
 .joinfor .join-warp .join-cont > div {
   width: 50%;
+  padding: 30px;
+}
+.joinfor .join-warp .join-cont .join-left-side {
+  position: relative;
+}
+.joinfor .join-warp .join-cont .join-left-side::before {
+  content: "";
+  position: absolute;
+  border-left: 3.5px dashed white;
+  height: calc(100% - 60px);
+  right: 0;
+  top: 30px;
+}
+.joinfor .join-warp .join-cont .slogan {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+.joinfor .join-warp .join-cont .slogan::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 140px);
+  width: 0;
+  height: 3px;
+  border-left: solid 100px #1072c2;
+  border-right: solid 180px #fff;
+}
+.joinfor .join-warp .join-cont .text-content {
+  line-height: 30px;
+  text-align: justify;
+}
+.joinfor .join-warp .join-cont .form-cont {
+  margin-bottom: 15px;
+}
+.joinfor .join-warp .join-cont .form-cont input {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.joinfor .join-warp .join-cont .join-submit {
+  text-align: right;
 }
 
-.warp {
+.button {
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.button.primary {
+  background: purple;
+  color: white;
+}
+.button.primary:hover {
+  background: rgb(233, 52, 233);
+}
+
+.courses {
   height: 100vh;
+  background: rgb(49, 49, 49);
+  background-image: url(../images/process.jpeg);
+  background-size: cover;
+  position: relative;
+  color: white;
+  padding-top: 120px;
+}
+.courses::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.549);
+}
+
+.slogan {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+.slogan::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 140px);
+  width: 0;
+  height: 3px;
+  border-left: solid 100px #1072c2;
+  border-right: solid 180px #fff;
+}
+
+.flow {
+  position: relative;
+  z-index: 2;
+}
+.flow .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.flow .item::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  border-left: 4px dashed white;
+}
+.flow .item .circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background: blue;
+  position: relative;
+  z-index: 2;
+}
+.flow .item .text {
+  position: absolute;
+  background: green;
+  left: calc(50% + 50px);
+  padding: 20px;
+  border-radius: 5px;
+}
+.flow .item .text h4 {
+  margin-bottom: 15px;
+}
+.flow .item:nth-child(even) .text {
+  left: unset;
+  right: calc(50% + 50px);
+  text-align: right;
 }/*# sourceMappingURL=layout02.css.map */

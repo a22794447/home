@@ -28,7 +28,7 @@ body, html {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 99;
 }
 .header .header-cont {
   background: rgb(255, 255, 255);
@@ -173,13 +173,14 @@ body, html {
 }
 
 .courses {
-  height: 100vh;
+  height: min-100vh;
   background: rgb(49, 49, 49);
   background-image: url(../images/process.jpeg);
   background-size: cover;
   position: relative;
   color: white;
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 .courses::before {
   content: "";

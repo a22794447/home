@@ -76,3 +76,21 @@
         }
     }
 }
+
+.bg-change{
+    margin: 50px auto;
+    background: green;
+    color: orange;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: all;
+    transition-duration: 1s;
+
+    &:hover{
+        background: purple;
+        color: red;
+    }
+}

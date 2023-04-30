@@ -26,4 +26,21 @@ a {
   margin-top: 50px;
   background: green;
   color: orange;
+}
+
+.haru {
+  display: flex;
+  margin-top: 150px;
+  width: 100px;
+  height: 100px;
+  background: red;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+}
+.haru .text {
+  transform: rotate(135deg);
+  font-size: 30px;
+  font-weight: 900;
 }/*# sourceMappingURL=transform.css.map */

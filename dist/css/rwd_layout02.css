@@ -46,6 +46,9 @@ body, html {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+.header .header-cont #mobile-switch-box {
+  display: none;
+}
 .header .header-cont .menu ul {
   list-style-type: none;
   display: flex;
@@ -288,5 +291,24 @@ body, html {
   }
   .header .header-cont .mobile {
     display: flex;
+  }
+  .header .header-cont #mobile-switch-box:checked ~ .menu {
+    display: block;
+  }
+  .header .header-cont #mobile-switch-box:checked ~ .mobile > span {
+    background: orange;
+  }
+  .header .header-cont #mobile-switch-box:checked ~ .mobile > span:first-child {
+    position: relative;
+    transform: rotate(45deg);
+    top: 5px;
+  }
+  .header .header-cont #mobile-switch-box:checked ~ .mobile > span:nth-child(2) {
+    display: none;
+  }
+  .header .header-cont #mobile-switch-box:checked ~ .mobile > span:last-child {
+    position: relative;
+    transform: rotate(-45deg);
+    top: -5px;
   }
 }/*# sourceMappingURL=rwd_layout02.css.map */

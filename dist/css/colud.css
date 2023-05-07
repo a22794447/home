@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 body {
   background: rgb(113, 113, 239);
   width: 100%;

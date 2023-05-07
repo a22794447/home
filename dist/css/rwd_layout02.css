@@ -286,14 +286,39 @@ body, html {
 }
 
 @media screen and (max-width: 800px) {
+  .header .header-cont {
+    position: relative;
+  }
   .header .header-cont .menu {
-    display: none;
+    position: absolute;
+    background: white;
+    top: -500px;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: 0.5s;
+    z-index: 2;
+  }
+  .header .header-cont .menu ul {
+    flex-direction: column;
+  }
+  .header .header-cont .menu ul li {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .header .header-cont .menu ul li:last-child {
+    margin-bottom: 0;
   }
   .header .header-cont .mobile {
     display: flex;
   }
   .header .header-cont #mobile-switch-box:checked ~ .menu {
-    display: block;
+    top: 80px;
+    opacity: 1;
   }
   .header .header-cont #mobile-switch-box:checked ~ .mobile > span {
     background: orange;

@@ -2,9 +2,35 @@
     .header{
         
         .header-cont{
-            
+             position: relative;
+
             .menu{
-                display: none;
+                // display: none;
+                position: absolute;
+                background: white;
+                top: -500px;
+                width: 100%;
+                left: 0;
+                opacity: 0;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                transition: .5s;
+                z-index: 2;
+
+                ul{
+                    flex-direction: column;
+
+                    li{
+                        margin-right: 0;
+                        margin-bottom: 30px;
+
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
             }
         
             .mobile{
@@ -14,7 +40,9 @@
             #mobile-switch-box{
                 &:checked{
                     ~.menu{
-                        display: block;
+                        // display: block;
+                        top: 80px;
+                        opacity: 1;
                     }
 
                     ~.mobile{

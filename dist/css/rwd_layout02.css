@@ -301,7 +301,6 @@ body, html {
     padding-top: 30px;
     padding-bottom: 30px;
     transition: 0.5s;
-    z-index: 2;
   }
   .header .header-cont .menu ul {
     flex-direction: column;

@@ -145,24 +145,16 @@ ul {
   display: none;
 }
 #run-trigger:checked ~ .to-run {
-  -webkit-animation-name: run;
-          animation-name: run;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-name: run;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 #run-trigger:checked ~ .jaup {
-  -webkit-animation-name: run-m;
-          animation-name: run-m;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-name: run-m;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .button {
@@ -176,17 +168,6 @@ ul {
   background: rgb(203, 203, 203);
 }
 
-@-webkit-keyframes run {
-  from {
-    left: 0;
-    background: blue;
-  }
-  to {
-    left: 100%;
-    background: red;
-  }
-}
-
 @keyframes run {
   from {
     left: 0;
@@ -195,23 +176,6 @@ ul {
   to {
     left: 100%;
     background: red;
-  }
-}
-@-webkit-keyframes run-m {
-  0% {
-    left: 0;
-    top: 0;
-    background: yellow;
-  }
-  50% {
-    left: 50%;
-    top: 50px;
-    background: green;
-  }
-  100% {
-    left: 100%;
-    top: 0;
-    background: purple;
   }
 }
 @keyframes run-m {

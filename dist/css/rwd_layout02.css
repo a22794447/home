@@ -335,9 +335,20 @@ body, html {
     transform: rotate(-45deg);
     top: -5px;
   }
+  .joinfor {
+    height: unset;
+    min-height: 100vh;
+  }
+  .joinfor .join-warp {
+    height: unset;
+    align-items: flex-start;
+    padding-top: 120px;
+  }
   .joinfor .join-warp .join-cont {
     flex-direction: column;
     background: transparent;
+    height: unset;
+    padding-bottom: 60px;
   }
   .joinfor .join-warp .join-cont > div {
     width: 100%;

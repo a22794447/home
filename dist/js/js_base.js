@@ -3,5 +3,5 @@ let firstName="Xuerou";
 let lastName="ars";
 let country="tw";
 
-console.log('(' + country + ')' + firstName + ' ' + lastName)
+console.log('(' + country + ') ' + firstName + ' ' + lastName)
 console.log(`(${country}) ${firstName} ${lastName}`)

@@ -20,6 +20,19 @@ let num10 = num1 % num4;
 let num11 = num1 + 'a';
 console.log(num1, num2, num3, num4, num5, num6, num7, num8, num9, num10, num11);
 
+// 字元 char ,強型態語言時,一次只能塞一個
+let s1 = 'S1 \t S1';
+// 字串 string 
+let s2 = "S2 \t S2";
+
+// escape \
+// \n -> new line--換行
+// \r\n -> new line--換行pc版本
+// \t -> tab
+
+console.log(s1);
+console.log(s2);
+
 // 字串轉換數字 parseInt(字串, 10進制) 12 13是同樣的的算法
 let num12 = parseInt(num1, 10) + parseInt(num4, 10);
 let num13 = +num1 + +num4;

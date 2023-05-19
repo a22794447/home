@@ -101,3 +101,24 @@ for (let aaa = 0; aaa < 100; aaa++) {
     nums100[aaa] = Math.ceil(Math.random() * 100);
 }
 console.table(nums100);
+
+// 宣告
+const a1 = function () {
+    console.log('Origin function');
+}
+
+const a2 = () => {
+    console.log('Arror function');
+}
+
+nums.forEach(function (ara, shi) {
+    console.log(`第 ${shi + 1} 位同學: ${ara}`);
+})
+
+// 具名函數不一定要add
+const addars = function (ara, shi) {
+    console.log(`具名函數--第 ${shi + 1} 位同學: ${ara}`);
+} 
+
+// 呼叫
+nums.forEach(addars)

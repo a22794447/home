@@ -121,4 +121,26 @@ const addars = function (ara, shi) {
 } 
 
 // 呼叫
-nums.forEach(addars)
+nums.forEach(addars);
+
+// 函數
+// --宣告
+const addsku = (ono, sho) => {
+    ono = +ono;
+    sho = +sho;
+    let total = ono + sho;
+    console.log(`In function: ${total}`);
+    return total;
+}
+
+let sos = addsku(40, 20);
+console.log(sos)
+
+//--呼叫 
+let masaki = [40, 50, 80, 75];
+let add = 20;
+masaki.forEach((nino, jun) => {
+    masaki[jun] = addsku(nino, add);
+})
+
+console.table(masaki);

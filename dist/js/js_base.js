@@ -79,3 +79,25 @@ console.log(numb2);
 // 刪除, (排序2開始刪除2個)
 numb.splice(2,2);
 console.log(numb);
+
+// 迴圈
+let nums = [40, 50, 80, 75];
+
+// 變數.forEach(值, 排序)
+console.log('調整前')
+nums.forEach((ara, shi) => {
+    console.log(`第 ${shi + 1} 位同學: ${ara}`);
+    nums[shi] = ara + 20;
+})
+
+console.log('調整後')
+nums.forEach((ara, shi) => {
+    console.log(`第 ${shi + 1} 位同學: ${ara}`);
+})
+
+// 製作100個成績
+let nums100 = [];
+for (let aaa = 0; aaa < 100; aaa++) {
+    nums100[aaa] = Math.ceil(Math.random() * 100);
+}
+console.table(nums100);

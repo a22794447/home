@@ -175,3 +175,12 @@ students.forEach((student, index) => {
 })
 
 console.table(students)
+
+// ++nn++
+let n = 1;
+let n2 = n++
+let n3 =++n;
+
+console.log(n);
+console.log(n2);
+console.log(n3);

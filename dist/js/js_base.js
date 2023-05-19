@@ -129,7 +129,7 @@ const addsku = (ono, sho) => {
     ono = +ono;
     sho = +sho;
     let total = ono + sho;
-    console.log(`In function: ${total}`);
+    // console.log(`In function: ${total}`);
     return total;
 }
 
@@ -138,9 +138,40 @@ console.log(sos)
 
 //--呼叫 
 let masaki = [40, 50, 80, 75];
-let add = 20;
+let addara = 20;
 masaki.forEach((nino, jun) => {
-    masaki[jun] = addsku(nino, add);
+    masaki[jun] = addsku(nino, addara);
 })
 
 console.table(masaki);
+
+// 物件 {}
+let students = [];
+students.push({
+    name: 'David',
+    num: 40
+});
+
+students.push({
+    name: 'John',
+    num: 50
+});
+
+students.push({
+    name: 'Helen',
+    num: 80
+});
+
+students.push({
+    name: 'Mary',
+    num: 20
+});
+
+let add = 30;
+students.forEach((student, index) => {
+    console.log(`Student ${student.name}: ${student.num}`);
+    student.num = addsku(student.num, add);
+    students[index] = student;
+})
+
+console.table(students)

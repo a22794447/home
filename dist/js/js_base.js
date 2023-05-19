@@ -44,3 +44,25 @@ if (b1) {
 } else {
     console.log('No');
 }
+
+// 陣列 [] ,排序編號會從0開始
+let numb = [1, 2, 3, 4];
+console.log(numb);
+
+// 增加
+numb.push(5);
+console.log(numb);
+
+// 尋找排序第4的是哪個
+console.log(numb[4]);
+
+// 轉字串, 展開並用::做區隔(區隔的符號可以改)
+console.log(numb.join('::'));
+
+// 尋找()裡的排序是幾號
+let numb2 = numb.indexOf(3);
+console.log(numb2);
+
+// 刪除, (排序2開始刪除2個)
+numb.splice(2,2);
+console.log(numb);

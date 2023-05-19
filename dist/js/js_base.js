@@ -28,3 +28,19 @@ console.log(num12, num13, num14);
 
 // 數字轉換字串
 console.log(num1, num1.toString(), typeof num1, typeof num1.toString());
+
+// 布林, b4 b6 為假的
+let b1 = true;
+let b2 = false;
+let b3 = 1;
+let b4 = 0;
+let b5 = 's';
+let b6 = '';
+let b7 = -1;
+let b8 = 2;
+
+if (b1) {
+    console.log('Yes');
+} else {
+    console.log('No');
+}

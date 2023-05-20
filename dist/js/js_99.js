@@ -28,7 +28,13 @@ tchBtn.addEventListener('click', () => {
 // 步驟0；綁定事件
 
 const genTable = () => {
-    console.log('123');
+    // console.log('123');
+    // 步驟1、2：抓取n1、n2
+    let n1 = document.querySelector('#n1');
+    let n2 = document.querySelector('#n2');
+
+    console.log(n1, n2);
+    console.log(n1.value, n2.value);
 }
 
 let make = document.querySelector('#make');

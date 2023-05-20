@@ -8,3 +8,57 @@
     position: relative;
     margin: auto;
 }
+
+.input-block{
+    display: flex;
+    margin: 20px auto;
+    align-items: center;
+
+    >div{
+        flex: 1;
+    }
+
+    input{
+        padding: 5px;
+        border: 0;
+        background: rgb(196, 194, 194);
+        outline: 0;
+        font-size: 14px;
+    }
+
+    button{
+        padding: 5px 10px;
+        border: 0;
+        background: rgb(45, 45, 173);
+        color: white;
+        cursor: pointer;
+
+        &:hover{
+            background: rgb(120, 120, 205);
+        }
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    th,
+    td {
+        border: 1px solid #7e7e7e;
+        padding: 5px;
+        text-align: center;
+    }
+
+    th {
+        background: #164a86;
+        color: #fff;
+    }
+
+    tbody {
+        tr:nth-child(even) td {
+            background: #dedede;
+        }
+    }
+}

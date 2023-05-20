@@ -22,4 +22,49 @@ ul {
   padding-right: 15px;
   position: relative;
   margin: auto;
+}
+
+.input-block {
+  display: flex;
+  margin: 20px auto;
+  align-items: center;
+}
+.input-block > div {
+  flex: 1;
+}
+.input-block input {
+  padding: 5px;
+  border: 0;
+  background: rgb(196, 194, 194);
+  outline: 0;
+  font-size: 14px;
+}
+.input-block button {
+  padding: 5px 10px;
+  border: 0;
+  background: rgb(45, 45, 173);
+  color: white;
+  cursor: pointer;
+}
+.input-block button:hover {
+  background: rgb(120, 120, 205);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table th,
+table td {
+  border: 1px solid #7e7e7e;
+  padding: 5px;
+  text-align: center;
+}
+table th {
+  background: #164a86;
+  color: #fff;
+}
+table tbody tr:nth-child(even) td {
+  background: #dedede;
 }/*# sourceMappingURL=js_99.css.map */

@@ -52,16 +52,31 @@ const genTable = () => {
         return
     }
 
+    let thead = [];
+    thead.push(' ');
+
     // console.log('I can!');
     // 運算
     let operation = [];
     for (let i = 1; i <= n1.value; i++) {
+        thead.push(i);
         for (let j = 1; j <= n2.value; j++) {
             operation.push(`${i} * ${j} = &{i * j}`)
         }
     }
 
-    console.log(operation);
+    let table = document.querySelector('#table');
+    let thtadTr = document.querySelector('thead tr')
+    
+    thtadTr.innerHTML = ' ';
+    thead.forEach((x, xindex) => {
+        thtadTr.innerHTML += `<th>${x}</th>`
+        // 上下方為同樣的算法，上方是簡化的樣子
+        // thtadTr.innerHTML = thtadTr.innerHTML + `<th>${x}</th>`
+    })
+
+    console.log(thead)
+    
 }
 
 let make = document.querySelector('#make');

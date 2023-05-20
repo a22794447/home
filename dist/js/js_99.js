@@ -52,7 +52,16 @@ const genTable = () => {
         return
     }
 
-    console.log('I can!');
+    // console.log('I can!');
+    // 運算
+    let operation = [];
+    for (let i = 1; i <= n1.value; i++) {
+        for (let j = 1; j <= n2.value; j++) {
+            operation.push(`${i} * ${j} = &{i * j}`)
+        }
+    }
+
+    console.log(operation);
 }
 
 let make = document.querySelector('#make');

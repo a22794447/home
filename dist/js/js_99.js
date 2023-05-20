@@ -24,4 +24,13 @@ tchBtn.addEventListener('click', () => {
     num1.value = 'ABC';
 });
 
+// 99乘法
+// 步驟0；綁定事件
 
+const genTable = () => {
+    console.log('123');
+}
+
+let make = document.querySelector('#make');
+
+make.addEventListener('click', genTable);

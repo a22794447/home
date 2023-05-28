@@ -57,6 +57,7 @@ const genTable = () => {
 
     // console.log('I can!');
     // 運算
+    // 迴圈，知道上限
     let result = {};
     for (let i = 1; i <= n1.value; i++) {
         thead.push(i);
@@ -80,6 +81,7 @@ const genTable = () => {
     let tbodyTr = '';
     tbody.innerHTML = '';
 
+    // 迴圈，不知道上限設置
     for (let row in result) {
         tbodyTr = `<tr><td>${row}</td>`;
         let columns = result[row];

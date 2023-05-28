@@ -73,56 +73,37 @@ const genTable = () => {
 
     // 將 n1 的值跑 for loop(迴圈知道上限的喔) 產生 thead
     // 填入 thead 資料
-    for (let i = 1; i <= n1.value; i++) {
-        theadHTML += `<th>${i}</th>`;
-    }
-
-    // 關閉 thead
-    theadHTML += '</tr>';
-    // 更新 thead 內容
-    thead.innerHTML = theadHTML;
-    return;
-
-    let thead = [];
-    thead.push(' ');
-
-    // console.log('I can!');
-    // 運算
-    // 迴圈，知道上限
     let result = {};
-    for (let i = 1; i <= n1.value; i++) {
-        thead.push(i);
+    for (let i = 1; i <= n2.value; i++) {
         result[i] = [];
-        for (let j = 1; j <= n2.value; j++) {
+        for (let j = 1; j <= n1.value; j++) {
             result[i].push(i * j);
         }
     }
 
-    
-    let thtadTr = document.querySelector('thead tr')
-    
-    thtadTr.innerHTML = ' ';
-    thead.forEach((x, xindex) => {
-        thtadTr.innerHTML += `<th>${x}</th>`
-        // 上下方為同樣的算法，上方是簡化的樣子
-        // thtadTr.innerHTML = thtadTr.innerHTML + `<th>${x}</th>`
-    })
+    // 產生 UI 2
+    let tbodyHtml = '';
 
-    
-    let tbodyTr = '';
-    tbody.innerHTML = '';
-
-    // 迴圈，不知道上限設置
     for (let row in result) {
-        tbodyTr = `<tr><td>${row}</td>`;
+        tbodyHtml = `<tr><td>${row}</td>`;
         let columns = result[row];
         columns.forEach(value => {
-            tbodyTr += `<td>${value}</td>`;
+            tbodyHtml += `<td>${value}</td>`;
         })
 
-        tbodyTr += '</tr>';
-        tbody.innerHTML += tbodyTr;
+        tbodyHtml += '</tr>';
+        tbody.innerHTML += tbodyHtml;
     }
+    console.log(result)
+
+    // console.log('I can!');
+    // 運算
+    // 迴圈，知道上限
+    // let result = {};
+        // 上下方為同樣的算法，上方是簡化的樣子
+        // thtadTr.innerHTML = thtadTr.innerHTML + `<th>${x}</th>`
+    // 迴圈，不知道上限設置
+    
 }
 
 let make = document.querySelector('#make');

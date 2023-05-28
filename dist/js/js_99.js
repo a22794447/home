@@ -68,11 +68,24 @@ const genTable = () => {
     let tbody = table.querySelector('tbody');
 
     // 初始化 thead UI
+    thtad.innerHTML = '';
+    tbody.innerHTML = '';
+
     // HTML 內容初始化
     let theadHTML = '<tr><th></th>';
 
     // 將 n1 的值跑 for loop(迴圈知道上限的喔) 產生 thead
     // 填入 thead 資料
+    for (let i = 1; i <= n1.value; i++) {
+        theadHTML += `<th>${i}</th>`;
+    }
+
+    // 關閉 thead
+    theadHTML += '</tr>';
+    // 更新 thead 內容
+    thtad.innerHTML = theadHTML;
+
+    // tbody UI 內容資料產生 1
     let result = {};
     for (let i = 1; i <= n2.value; i++) {
         result[i] = [];
@@ -82,17 +95,17 @@ const genTable = () => {
     }
 
     // 產生 UI 2
-    let tbodyHtml = '';
+    let tbodyHTML = '';
 
     for (let row in result) {
-        tbodyHtml = `<tr><td>${row}</td>`;
+        tbodyHTML = `<tr><td>${row}</td>`;
         let columns = result[row];
         columns.forEach(value => {
-            tbodyHtml += `<td>${value}</td>`;
+            tbodyHTML += `<td>${value}</td>`;
         })
 
-        tbodyHtml += '</tr>';
-        tbody.innerHTML += tbodyHtml;
+        tbodyHTML += '</tr>';
+        tbody.innerHTML += tbodyHTML;
     }
     console.log(result)
 

@@ -30,27 +30,58 @@ tchBtn.addEventListener('click', () => {
 const genTable = () => {
     // console.log('123');
     // 步驟1、2：抓取n1、n2
+    // 數字1 的 DOM
     let n1 = document.querySelector('#n1');
+    // 數字2 的 DOM
     let n2 = document.querySelector('#n2');
 
     // console.log(n1, n2);
     // console.log(n1.value, n2.value);
 
+    // 如果沒有數字1
     if (!n1) {
+        // BYE
         return
     }
 
+    // 如果數字1 小於等於 0
     if (n1.value <=0) {
+        // BYE
         return
     }
 
+    // 如果沒有數字2
     if (!n2) {
+        // BYE
         return
     }
 
+    // 如果數字2 小於等於 0
     if (n2.value <= 0) {
+        // BYE
         return
     }
+
+    // 抓取 table 的 DOM
+    let table = document.querySelector('#table');
+    let thtad = document.querySelector('thead')
+    let tbody = table.querySelector('tbody');
+
+    // 初始化 thead UI
+    // HTML 內容初始化
+    let theadHTML = '<tr><th></th>';
+
+    // 將 n1 的值跑 for loop(迴圈知道上限的喔) 產生 thead
+    // 填入 thead 資料
+    for (let i = 1; i <= n1.value; i++) {
+        theadHTML += `<th>${i}</th>`;
+    }
+
+    // 關閉 thead
+    theadHTML += '</tr>';
+    // 更新 thead 內容
+    thead.innerHTML = theadHTML;
+    return;
 
     let thead = [];
     thead.push(' ');
@@ -67,7 +98,7 @@ const genTable = () => {
         }
     }
 
-    let table = document.querySelector('#table');
+    
     let thtadTr = document.querySelector('thead tr')
     
     thtadTr.innerHTML = ' ';
@@ -77,7 +108,7 @@ const genTable = () => {
         // thtadTr.innerHTML = thtadTr.innerHTML + `<th>${x}</th>`
     })
 
-    let tbody = table.querySelector('tbody');
+    
     let tbodyTr = '';
     tbody.innerHTML = '';
 

@@ -8,11 +8,43 @@
 </head>
 
 <style>
-    .active{
+    /* .active{
         color: green;
         font-size: 50px;
         background-color: black;
-    }
+    } */
+
+    *,
+        *::before,
+        *::after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #mobile-icon {
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            margin-left: 40px;
+            cursor: pointer;
+        }
+
+        #mobile-icon span {
+            width: 50px;
+            height: 10px;
+            background: #000;
+            margin-bottom: 5px;
+        }
+
+        #mobile-icon span:last-child {
+            margin-bottom: 0;
+
+        }
+
+        #mobile-icon.active span {
+            background: red;
+        }
 </style>
 <body>
     <div id="uid">
@@ -21,6 +53,12 @@
     <button id="doing">Doing</button>
     <button id="add-class">Add Class</button>
     <button id="remove-class">Remove Class</button>
+
+    <div id="mobile-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </body>
 
 <script src="js/js_dom_control.js"></script>

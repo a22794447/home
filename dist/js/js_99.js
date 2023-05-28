@@ -57,11 +57,12 @@ const genTable = () => {
 
     // console.log('I can!');
     // 運算
-    let operation = [];
+    let result = {};
     for (let i = 1; i <= n1.value; i++) {
         thead.push(i);
+        result[i] = [];
         for (let j = 1; j <= n2.value; j++) {
-            operation.push(`${i} * ${j} = &{i * j}`)
+            result[i].push(i * j);
         }
     }
 
@@ -75,8 +76,20 @@ const genTable = () => {
         // thtadTr.innerHTML = thtadTr.innerHTML + `<th>${x}</th>`
     })
 
-    console.log(thead)
-    
+    let tbody = table.querySelector('tbody');
+    let tbodyTr = '';
+    tbody.innerHTML = '';
+
+    for (let row in result) {
+        tbodyTr = `<tr><td>${row}</td>`;
+        let columns = result[row];
+        columns.forEach(value => {
+            tbodyTr += `<td>${value}</td>`;
+        })
+
+        tbodyTr += '</tr>';
+        tbody.innerHTML += tbodyTr;
+    }
 }
 
 let make = document.querySelector('#make');

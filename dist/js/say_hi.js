@@ -22,13 +22,27 @@ hi.addEventListener('click', sayHI);
 
 let name = document.querySelector('#name');
 
-name.addEventListener('change', () => {
-    if (!name.value) {
-        alert('請輸入名字');
-        name.focus();
-    }
-})
+// name.addEventListener('change', () => {
+//     if (!name.value) {
+//         alert('請輸入名字');
+//         name.focus();
+//     }
+// })
 
-name.addEventListener('blur', () => {
-    console.log(`blur: ${name.value}`);
+// name.addEventListener('blur', () => {
+//     console.log(`blur: ${name.value}`);
+// })
+
+// name.addEventListener('keypress', () => {
+//     console.log(`keypress: ${name.value}`);
+// })
+
+// name.addEventListener('keyup', () => {
+//     console.log(`keypress: ${name.value}`);
+// })
+
+name.addEventListener('keyup', (e) => {
+    if (e.key == 'Enter') {
+        sayHI();
+    }
 })

@@ -8,11 +8,11 @@
 </head>
 
 <style>
-    /* .active{
+    .active{
         color: green;
         font-size: 50px;
         background-color: black;
-    } */
+    }
 
     *,
         *::before,
@@ -42,8 +42,20 @@
 
         }
 
-        #mobile-icon.active span {
+        #mobile-icon.act span {
             background: red;
+        }
+
+        .image-block {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            margin: 20px auto;
+        }
+
+        .image-block img {
+            max-width: 100%;
+            height: auto;
         }
 </style>
 <body>
@@ -58,6 +70,16 @@
         <span></span>
         <span></span>
         <span></span>
+    </div>
+
+    <div class="image-block">
+        <img src="images/icon/apple-icon.png" alt="" data-src="images/process.jpeg">
+    </div>
+    <div class="image-block">
+        <img src="images/banner.jpeg" alt="" data-src="images/icon/apple-icon-180x180.png">
+    </div>
+    <div class="image-block">
+        <img src="images/logo.svg" alt="" data-src="images/process.jpeg">
     </div>
 </body>
 

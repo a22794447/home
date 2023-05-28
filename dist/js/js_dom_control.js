@@ -24,9 +24,24 @@ let mobileIcon = document.querySelector('#mobile-icon');
 
 
 mobileIcon.addEventListener('click', () => {
-    if (mobileIcon.classList.contains('active')) {
-        mobileIcon.classList.remove('active');
+    if (mobileIcon.classList.contains('act')) {
+        mobileIcon.classList.remove('act');
     } else {
-        mobileIcon.classList.add('active');
+        mobileIcon.classList.add('act');
     }
 })
+
+const lazyLoad = () => {
+    let images = document.querySelectorAll('.image-block img');
+    images.forEach(img => {
+        let src = img.dataset.src;
+        if (src) {
+            img.src = src;
+        }
+    });
+}
+
+
+setTimeout(() => {
+    lazyLoad();
+}, 5000)

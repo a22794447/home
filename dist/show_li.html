@@ -32,7 +32,10 @@
 
     menu.addEventListener('click', (e) => {
         let target = e.target;
-        console.log(target.innerHTML);
+        // console.log(target.innerHTML, target.tagName);
+        if (target.tagName == 'LI') {
+            console.log(target.innerHTML);
+        }
     });
 
 

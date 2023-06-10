@@ -4,20 +4,18 @@ const database = {
         localStorage.setItem(key, value);
     },
     get(key, def) {
-        // return localStorage.getItem(key);
         let value = localStorage.getItem(key);
         if (value) {
             value = JSON.parse(value);
+            return value;
         }
         return def;
     },
     remove(key) {
         localStorage.removeItem(key);
-    
     }
 }
-
-Vue.createApp({
+let vm = Vue.createApp({
     data() {
         return {
             pending: [],
@@ -26,7 +24,6 @@ Vue.createApp({
         }
     },
     methods: {
-
         doAddItem() {
             let value = this.itemValue;
             if (!value) {
@@ -44,9 +41,10 @@ Vue.createApp({
             this.pending.push(value);
             this.itemValue = '';
             this.$refs.itemValue.focus();
-            database.set('todo-pending', this.pending);
-            // console.table(this.pending);
             this.update();
+        },
+        doRemove(index) {
+            console.log(index);
         },
         toDone(index) {
             let value = this.pending[index];
@@ -60,13 +58,14 @@ Vue.createApp({
             this.done.splice(index, 1);
             this.update();
         },
+
         update() {
             database.set('todo-pending', this.pending);
             database.set('todo-done', this.done);
-        },
-        mounted() {
-            // this.pending = database.get('todo-pending');
-            this.pending = database.get('todo-pending', []);
         }
+    },
+    mounted() {
+        this.pending = database.get('todo-pending', []);
+        this.done = database.get('todo-done', []);
     }
 }).mount('#app');

@@ -32,11 +32,10 @@ Vue.createApp({
             this.done.push(value);
             this.pending.splice(index, 1);
         },
-        toPenging(index) {
-
-            // console.log(index, value);
-            // 把代辦項目搬移到已完成資料內
-            // 刪除目前代辦項目
+        toPending(index) {
+            let value = this.done[index];
+            this.pending.push(value);
+            this.done.splice(index, 1);
         }
     }
 }).mount('#app');

@@ -64,6 +64,16 @@ ul {
 .pending-item input[type=checkbox]:checked ~ label {
   text-decoration: line-through;
 }
+.pending-item > ul li {
+  padding: 10px;
+  background: rgb(220, 119, 119);
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.pending-item > ul li:hover {
+  background: rgb(175, 41, 41);
+}
 
 .todo-status {
   display: flex;

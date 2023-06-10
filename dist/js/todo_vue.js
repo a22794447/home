@@ -29,8 +29,12 @@ Vue.createApp({
         },
         toDone(index) {
             let value = this.pending[index];
+            this.done.push(value);
+            this.pending.splice(index, 1);
+        },
+        toPenging(index) {
 
-            console.log(index, value);
+            // console.log(index, value);
             // 把代辦項目搬移到已完成資料內
             // 刪除目前代辦項目
         }

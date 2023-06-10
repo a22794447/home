@@ -51,10 +51,6 @@
 }
 
 .pending-item {
-    input[type="checkbox"]:checked~label {
-        text-decoration: line-through;
-    }
-
     >ul li{
         padding: 10px;
         background: rgb(220, 119, 119);
@@ -64,6 +60,20 @@
         
         &:hover{
             background: rgb(175, 41, 41);
+        }
+    }
+}
+
+.done-item {
+    >ul li{
+        padding: 10px;
+        background: rgb(134, 220, 119);
+        color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+        cursor: pointer;
+        
+        &:hover{
+            background: rgb(86, 175, 41);
         }
     }
 }
